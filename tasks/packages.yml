@@ -1,5 +1,10 @@
 - include_tasks: variables.yml
 
+- name: Tap homebrew fonts.
+  community.general.homebrew_cask:
+    name: homebrew/cask-fonts
+  when: ansible_distribution == "MacOSX"
+
 - name: Install zsh.
   package:
     name: "{{ pkg_zsh }}"
