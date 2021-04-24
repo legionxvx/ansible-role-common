@@ -29,3 +29,8 @@
   package:
     name: "{{ pkg_vlc }}"
     state: present
+
+- name: Install newsboat.
+  package:
+    name: "{{ pkg_newsboat }}"
+    state: present
