@@ -1,0 +1,22 @@
+- include_tasks: variables.yml
+
+- name: Create Projects dir
+  file:
+    path: "{{ home }}/Projects"
+    state: directory
+    become: true
+    become_user: "{{ username }}"
+
+- name: Create Projects dir
+  file:
+    path: "{{ home }}/Projects/src"
+    state: directory
+    become: true
+    become_user: "{{ username }}"
+
+- name: Install Rewind.
+  git:
+    repo: "https://github.com/legionxvx/rewind.git"
+    dest: "{{ home }}/Projects"
+  become: true
+  become_user: "{{ username }}"

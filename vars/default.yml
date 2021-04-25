@@ -1,6 +1,9 @@
+username: "legion"
+
 pkg_zsh: "zsh"
 pkg_fira_code_fonts: "fira-code-fonts"
 pkg_kitty: "kitty"
 pkg_snapd: "snapd"
 pkg_vlc: "vlc"
 pkg_newsboat: "newsboat"
+pkg_poetry: "poetry"
