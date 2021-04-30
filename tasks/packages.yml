@@ -34,3 +34,8 @@
   package:
     name: "{{ pkg_newsboat }}"
     state: present
+
+- name: Install mpv.
+  package:
+    name: "{{ pkg_mpv }}"
+    state: present
